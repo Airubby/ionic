@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/Swiper/dist/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link href="css/guidePage.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/category.css" rel="stylesheet">
+    <link href="css/goodsList.css" rel="stylesheet">
+    <link href="css/details.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+		
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/global.js"></script>
+    
+    <!--indexdb公共-->
+    <script src="templates/common/indexdb.js" type="text/javascript" charset="utf-8"></script>
+    <script src="templates/common/common.js" type="text/javascript" charset="utf-8"></script>
+    
+		<!--功能模块-->
+		<script src="templates/guidePage/guidePage_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/guidePage/guidePage_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/guidePage/guidePage_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/tab/tab_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/tab/tab_controller.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/home/home_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/home/home_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/home/home_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/category/category_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/category/category_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/category/category_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/goodsList/goodsList_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/goodsList/goodsList_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/goodsList/goodsList_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/details/details_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/details/details_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/details/details_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/cart/cart_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/cart/cart_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/cart/cart_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/account/account_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/account/account_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/account/account_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/about/about_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/about/about_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/about/about_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/safety/safety_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/safety/safety_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/safety/safety_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="templates/general/general_route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/general/general_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="templates/general/general_service.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--第三方插件-->
+		<script src="lib/Swiper/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/ionic-image-lazy-load/ionic-image-lazy-load.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+		
+    
+    
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <!--<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>-->
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+.bar.bar-positive .title{
+	text-align: center;
+}
+#account .light-bg{
+  background-color: #FFFFFF;
+}
+
+#account ion-content{
+  background-color: #E4E1E1;
+  padding-top: 0px;
+}
+#account .item{
+  background-color: #EFEFEF;
+}
+
+#account img{
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  z-index: 100;
+}
+
+#account #info span{
+  display: inline-block;
+  vertical-align:top;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+
+#account .telephone{
+  position:absolute;
+  right: 40px;
+  height: 20px;
+  width: 100px;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+#account .version{
+  float: right;
+  right: 5px;
+}
+.action-sheet-options {
+    background: #f1f2f3;
+}
+.action-sheet-group {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.action-sheet-title {
+    padding: 16px;
+    color: #8f8f8f;
+    text-align: center;
+    font-size: 13px;
+}
+.action-sheet .button {
+    display: block;
+    padding: 1px;
+    width: 100%;
+    border-radius: 0;
+    border-color: #d1d3d6;
+    background-color: transparent;
+    color: #007aff;
+    font-size: 21px;
+}
+.action-sheet-group .button {
+    border-width: 1px 0px 0px 0px;
+}
+.action-sheet-group {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
